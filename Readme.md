@@ -3,12 +3,12 @@ Aplicação completa com **frontend**, **backend** e **banco de dados PostgreSQL
 
 ---
 
-# Clone este repositório
+#### Clone este repositório
 git clone git@github.com:cvcartaxo/cubos-back-front.git
 
 cd cubos-back-front
 
-#### 📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ├── backend/  
 │   ├── Dockerfile  
@@ -24,7 +24,7 @@ cd cubos-back-front
 │  
 └── docker-compose.yml
 
-## ⚙️ Pré-requisitos
+### ⚙️ Pré-requisitos
 
 Antes de rodar o projeto, certifique-se de ter instalado:
 
@@ -51,7 +51,7 @@ E preciso configurar um arquivo .env dentro da pasta do backend local "Dados de 
 * DB_NAME=cubos
 * PORT=3000
 
-##  Subir os containers
+###  Subir os containers
 ```bash
 # Build e inicialização do projeto
 docker compose up -d --build
@@ -69,7 +69,7 @@ docker compose build --no-cache
 docker compose down
 ```
 
-# Como acessar a aplicação de forma local.
+### Como acessar a aplicação de forma local.
 
 http://127.0.0.1/
 
