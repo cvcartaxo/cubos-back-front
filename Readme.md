@@ -20,21 +20,37 @@ Aplicação completa com **frontend**, **backend** e **banco de dados PostgreSQL
 │  
 └── docker-compose.yml
 
-# 🐳 Comandos Docker - Projeto Full Stack
+## ⚙️ Pré-requisitos
+
+Antes de rodar o projeto, certifique-se de ter instalado:
+
+- **Docker**  
+  [Instalação do Docker](https://docs.docker.com/get-docker/)
+
+- **Docker Compose (v2 ou superior)**  
+  [Instalação do Docker Compose](https://docs.docker.com/compose/install/)
+
+- **Terminal / Linha de comando** para executar comandos Docker
+
+- **Sistema compatível:** Windows, macOS ou Linux
+
+- (Opcional) **Editor de código** para visualizar ou editar arquivos principais do projeto, como:
+  - `backend/.env`
+  - `frontend/nginx.conf`
+
 
 ## 🚀 Subir os containers
 ```bash
+# Build e inicialização do projeto
 docker compose up -d --build
 
 #Ver status dos containers
 docker ps
 
 #Ver logs em tempo real
-
 docker compose logs -f
 
 # Recriar containers sem cache
-
 docker compose build --no-cache
 
 # Parar containers
