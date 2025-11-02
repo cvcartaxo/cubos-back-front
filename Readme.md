@@ -37,7 +37,7 @@ Antes de rodar o projeto, certifique-se de ter instalado:
   - `backend/.env`
   - `frontend/nginx.conf`
 
-E preciso configurar um arquivo .env dentro da pasta do backend local "Dados de exemplo nos valores" a seguir.
+E preciso configurar um arquivo .env dentro da pasta do backend local "Dados de exemplo a seguir˜.
 
 * DB_USER=cartaxo_cubos
 * DB_PASS=cubos_12345
