@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+  cubos-db:
+    image: postgres:15-alpine
+    container_name: cubos-db
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER:-cartaxo_cubos}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-cubos_12345}
+      POSTGRES_DB: ${DB_NAME:-cubos}
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+    networks:
+      - internal
+
+  cubos-backend:
+    build: ./backend
+    container_name: cubos-backend
+    restart: always
+    env_file:
+      - ./backend/.env
+    expose:
+      - "3000" # expõe internamente (não para o host)
+    depends_on:
+      - cubos-db
+    networks:
+      - internal
+
+  cubos-frontend:
+    build: ./frontend
+    container_name: prod-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - cubos-backend
+    networks:
+      - internal
+      - external
+
+networks:
+  internal:
+    driver: bridge
+  external:
+    driver: bridge
