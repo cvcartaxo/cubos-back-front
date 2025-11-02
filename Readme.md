@@ -7,7 +7,6 @@ Aplicação completa com **frontend**, **backend** e **banco de dados PostgreSQL
 
 ├── backend/  
 │   ├── Dockerfile  
-│   ├── .env  
 │   └── (código do backend)  
 │  
 ├── frontend/  
@@ -37,6 +36,17 @@ Antes de rodar o projeto, certifique-se de ter instalado:
 - (Opcional) **Editor de código** para visualizar ou editar arquivos principais do projeto, como:
   - `backend/.env`
   - `frontend/nginx.conf`
+
+
+E preciso configurar um arquivo .env local 
+
+```
+DB_USER=cartaxo_cubos
+DB_PASS=cubos_12345
+DB_HOST=cubos-db
+DB_PORT=5432
+DB_NAME=cubos
+PORT=3000
 
 
 ## 🚀 Subir os containers
