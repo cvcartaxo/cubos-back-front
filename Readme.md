@@ -6,10 +6,9 @@ Aplicação completa com **frontend**, **backend** e **banco de dados PostgreSQL
 # Clone este repositório
 git clone git@github.com:cvcartaxo/cubos-back-front.git
 
-# Acesse a pasta do projeto
 cd cubos-back-front
 
-## 📁 Estrutura do Projeto
+#### 📁 Estrutura do Projeto
 
 ├── backend/  
 │   ├── Dockerfile  
