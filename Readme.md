@@ -46,7 +46,7 @@ E preciso configurar um arquivo .env dentro da pasta do backend local "Dados de 
 * DB_NAME=cubos
 * PORT=3000
 
-## 🚀 Subir os containers
+##  Subir os containers
 ```bash
 # Build e inicialização do projeto
 docker compose up -d --build
@@ -62,3 +62,11 @@ docker compose build --no-cache
 
 # Parar containers
 docker compose down
+```
+
+# Como acessar a aplicação de forma local.
+
+http://127.0.0.1/
+
+
+
