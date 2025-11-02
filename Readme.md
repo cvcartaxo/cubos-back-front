@@ -37,16 +37,14 @@ Antes de rodar o projeto, certifique-se de ter instalado:
   - `backend/.env`
   - `frontend/nginx.conf`
 
-
 E preciso configurar um arquivo .env dentro da pasta do backend local "Dados de exemplo nos valores" a seguir.
 
-DB_USER=cartaxo_cubos
-DB_PASS=cubos_12345
-DB_HOST=cubos-db
-DB_PORT=5432
-DB_NAME=cubos
-PORT=3000
-
+* DB_USER=cartaxo_cubos
+* DB_PASS=cubos_12345
+* DB_HOST=cubos-db
+* DB_PORT=5432
+* DB_NAME=cubos
+* PORT=3000
 
 ## 🚀 Subir os containers
 ```bash
