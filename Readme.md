@@ -26,16 +26,16 @@ Aplicação completa com **frontend**, **backend** e **banco de dados PostgreSQL
 ```bash
 docker compose up -d --build
 
-🧩 Ver status dos containers
+#Ver status dos containers
 docker ps
 
-📜 Ver logs em tempo real
+#Ver logs em tempo real
 
 docker compose logs -f
 
-🧱 Recriar containers sem cache
+# Recriar containers sem cache
 
 docker compose build --no-cache
 
-🛑 Parar containers
+# Parar containers
 docker compose down
